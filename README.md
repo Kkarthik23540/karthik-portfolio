@@ -18,7 +18,7 @@ This repository hosts the source code for my personal portfolio website. It show
 
 - HTML
 - CSS
-- JavaScript
+- Java
 - Python
 
 ## Installation
