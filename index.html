@@ -40,14 +40,16 @@
 
     .menu-toggle {
       position: absolute;
-      top: 15px;
+      top:auto;
       left: 20px;
       cursor: pointer;
       font-size: 2rem;
-      color: white;
+      color: rgb(255, 255, 255);
       z-index: 1000;
-  
     }
+    .menu-toggle.active i {
+    content: '\f00d'; /* This is Font Awesome's cross icon */
+}
 
     .header-content {
       display: flex;
@@ -57,7 +59,7 @@
     }
 
     .profile-pic {
-      width: 120px;
+      width: 200px;
       height: 120px;
       border-radius: 90%;
       object-fit: cover;
@@ -105,22 +107,22 @@
     .mobile-menu {
       display: none;
       position: absolute;
-      top: 60px;
-      left: 0;
-      width: 20%;
+      top: 80px;
+      left:auto;
+      width: 30%;
       background-color: white;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       text-align: center;
       z-index: 1000;
       /* Add temporary debugging styles */
-      border: 2px solid rgb(192, 86, 89);
+      border: 2px solid rgb(31, 29, 29);
     }
 
     .mobile-menu a {
       display: block;
       padding: 15px;
       color: #2c3e50;
-      text-decoration: none;
+      text-decoration:double;
       font-weight: bold;
       font-size: 1.1rem;
     }
@@ -131,7 +133,7 @@
     }
 
     .mobile-menu.active {
-      display: block;
+      display:flex;
     }
 
     /* Section Styles */
