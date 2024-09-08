@@ -23,4 +23,4 @@ To view or modify the portfolio locally, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/Kkarthik23540/my-portfolio.git
+   git clone https://github.com/Kkarthik23540/karthik-portfolio.git
