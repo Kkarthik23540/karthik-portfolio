@@ -71,6 +71,8 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
       }
       nav h3 {
           color: #fff;
@@ -138,28 +140,65 @@
       box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
        }
 /* Projects Section */
-    .project {
-      margin: 20px 0;
-      padding: 20px;
-      background-color: #f9f9f9;
-      border-radius: 10px;
-      text-align: center;
-      margin-bottom: 15px;
+#projects {
+  text-align: center;
+  margin: 60px auto;
+  padding: 10px;
+  max-width: 1200px;
+}
 
-    }
-    .project:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
-        }
-    .project h3 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-      color: #2c3e50;
-    }
-    .project p {
-      font-size: 1rem;
-      color: #777;
-    }
+#projects h2 {
+  font-size: 2rem;
+  color: #e74c3c;
+  margin-bottom: 30px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between project cards */
+  flex-wrap: wrap;
+  align-items: flex-start; /* Align items to the top */
+}
+
+.project {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px; /* Fixed width for the project cards */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.project p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Responsive Styles for Projects Section */
+@media (max-width: 768px) {
+  .projects-container {
+    justify-content: center; /* Center items horizontally */
+  }
+  .project {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 600px; /* Limit the width on larger mobile screens */
+  }
+}
+a
+
 /* Research Papers Section */
     .research-papers {
       display: flex;
@@ -240,8 +279,8 @@
       color: white;
       padding: 30px;
       text-align: center;
-      border-top-left-radius: 20px;
-      border-top-right-radius: 20px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
       box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
     }
     footer p {
@@ -255,13 +294,13 @@
       gap: 20px;
     }
     footer .social-links a {
-      color: #e74c3c;
+      color: #fcfcfc;
       font-size: 2rem;
       text-decoration: none;
       transition: color 0.3s ease;
     }
     footer .social-links a:hover {
-      color: #fff;
+      color: #cb0505;
     }
 /* Responsive Styles */
     html {
@@ -329,10 +368,18 @@
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>A responsive personal portfolio built with HTML and CSS...</p>
+    <div class="projects-container">
+      <div class="project">
+        <h3>Project 1: Portfolio Website</h3>
+        <p>A responsive personal portfolio built with HTML and CSS...</p>
+      </div>
+      <div class="project">
+        <h3>Project 2: Portfolio Website</h3>
+        <p>A responsive personal portfolio built with HTML and CSS...</p>
+      </div>
     </div>
+  </section>
+  
   </section>
 
   <section id="research">
