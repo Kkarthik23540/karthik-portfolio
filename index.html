@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="K. Karthik Reddy's Portfolio - Full-Stack Developer">
-  <title>K. Karthik Reddy</title>
+  <title>K. Karthik Reddy | portfolio</title>
 
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -36,6 +36,8 @@
       align-items: center;
       justify-content: center;
       text-align: center;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
     }
 
     .menu-toggle {
@@ -93,7 +95,7 @@
       font-size: 1.1rem;
       padding: 10px 20px;
       border-radius: 25px;
-      background-color: white;
+      background-color: rgb(52, 51, 102);
       box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
       transition: all 0.3s ease;
     }
@@ -109,7 +111,7 @@
       position: absolute;
       top: 80px;
       left:auto;
-      width: 110%;
+      width: 100%;
       background-color: white;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       text-align: center;
@@ -119,7 +121,7 @@
     }
 
     .mobile-menu a {
-      display: block;
+      display:flex;
       padding: 15px;
       color: #2c3e50;
       text-decoration:double;
@@ -162,6 +164,30 @@
       margin: 0 auto;
     }
 
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .skill {
+      background-color: #f9f9f9;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      width: 120px;
+      text-align: center;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .skill:hover {
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+        /* Projects Section */
+
     .project {
       margin: 20px 0;
       padding: 20px;
@@ -186,8 +212,8 @@
       font-size: 1rem;
       color: #777;
     }
-
-    .skills {
+    /* Research Papers Section */
+    .research-papers {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -195,18 +221,31 @@
       margin-top: 20px;
     }
 
-    .skill {
+    .research {
       background-color: #f9f9f9;
-      padding: 10px;
+      padding: 20px;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-      width: 120px;
+      width: 250px;
+      
+      /* Adjust width as needed */
       text-align: center;
       transition: box-shadow 0.3s ease;
     }
 
-    .skill:hover {
+    .research:hover {
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .research h3 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    .research p {
+      font-size: 1rem;
+      color: #777;
     }
 
     section#contact {
@@ -376,7 +415,7 @@
         <h3>CSS</h3>
       </div>
       <div class="skill">
-        <h3>JavaScript</h3>
+        <h3>Java</h3>
       </div>
       <div class="skill">
         <h3>Python</h3>
@@ -392,8 +431,31 @@
     </div>
   </section>
 
+  <section id="research">
+    <h2>Research Papers</h2>
+    <div class="research-papers">
+      <div class="research">
+        <h3>The Sentiment Whisperer</h3>
+        <p>Real-Time Emotion Detection with Python</p>
+      </div>
+      <div class="research">
+        <h3>Quantum Leap</h3>
+        <p>Hypothesis Testing in Python’s Data Universe</p>
+      </div>
+      <div class="research">
+        <h3>From Raw to Refined</h3>
+        <p>Data Preprocessing with Scikit-learn</p>
+      </div>
+      <div class="research">
+        <h3>Pythonic Pioneers</h3>
+        <p>Navigating Data with Exploratory Analysis</p>
+      </div>
+    </div>
+  </section>
+
   <section id="contact">
     <h2>Contact</h2>
+    <p>Phone: <a href="callto:7893176982">7893176982</a></p>
     <p>Email: <a href="mailto:kkarthik23540@gmail.com">kkarthik23540@gmail.com</a></p>
   </section>
 
@@ -406,7 +468,7 @@
       <a href="https://www.linkedin.com/in/k-karthik-824906315" target="_blank" title="LinkedIn">
         <i class="fab fa-linkedin-in"></i>
       </a>
-       <a href="https://x.com/KKarthik23540" target="_blank" title="Twitter">
+      <a href="https://x.com/KKarthik23540" target="_blank" title="Twitter">
         <i class="fab fa-twitter"></i>
       </a>
     </div>
