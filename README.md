@@ -16,11 +16,4 @@ Welcome to my portfolio! This site showcases my skills, projects, and experience
 - **CSS:** Styling the website for a responsive and attractive design.
 - **JavaScript:** Adding interactivity and smooth scrolling.
 
-## 📦 Installation
 
-To view or modify the portfolio locally, follow these steps:
-
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/Kkarthik23540/karthik-portfolio.git
